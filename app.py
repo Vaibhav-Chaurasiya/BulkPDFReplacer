@@ -528,7 +528,7 @@ def build_output_path(pdf_path, output_folder, keep_original_filename=True,
 # a temp directory. Since this is NOT the cwd or the system temp dir,
 # it must also be passed to launch(allowed_paths=[...]) below, or Gradio
 # will refuse to serve the resulting file (InvalidPathError).
-WORKDIR = os.path.expanduser("/Users/pankajyadav/Downloads/bulk_pdf_replacer_web")
+WORKDIR = os.path.join(os.getcwd(), "bulk_pdf_replacer_web")
 OUTPUT_DIR = os.path.join(WORKDIR, "output")
 
 
